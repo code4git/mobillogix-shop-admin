@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title>Dashboard</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link href="css/screen.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<!--[if lt IE 9]>
+		<script src="js/html5.js" type="text/javascript"></script>
+	<![endif]-->
+</head>
+<body id="dashboard-page">
+	<div id="wraper">
+		<div id="left">
+			<div id="logo">
+				<a href="">
+					<img src="img/logo.jpg" alt="Site Logo">
+				</a>
+			</div>
+			<div id="user-logged">
+				<a href="">
+					<img src="img/admin_avatar.png" alt="User Avatar">
+					<span id="user-name">Admin_new</span>
+				</a>
+			</div>
+			<div id="adminmenuwrap">
+				<ul id="adminmenu">
+					<li class="active"><a href="dashboard.html" title="Dashboard"><span class="icon dashboard-icon"></span>Dashboard</a></li>
+					<li><a href="sliders.html" title="Sliders"><span class="icon sliders-icon"></span>Sliders</a></li>
+					<li><a href="solutions.html" title="Solutions"><span class="icon solutions-icon"></span>Solutions</a></li>
+					<li><a href="products.html" title="Products"><span class="icon products-icon"></span>Products</a></li>
+					<li><a href="orders.html" title="Orders"><span class="icon orders-icon"></span>Orders</a></li>
+					<li><a href="customize.html" title="Customization"><span class="icon customize-icon"></span>Customization</a></li>
+					<li><a href="customers.html" title="Customers"><span class="icon customers-icon"></span>Customers</a></li>
+					<li><a href="users.html" title="Users"><span class="icon users-icon"></span>Users</a></li>
+				</ul>
+				<a id="collapse-link"><span class="icon collapse-icon"></span>Collapse menu</a>
+			</div>
+		</div>
+		<div id="main">
+			<header id="header">
+				<div class="page-title">
+					<h1>Dashboard</h1>
+				</div>
+				<div id="header-nav">
+					<a href="" id="choose-date-range" class="btn link-btn">Choose Date Range</a>
+				</div>
+			</header>
+			<div id="content">
+				<div class="dash-start">
+					<div class="overview-wrap">
+						<div class="sales-info-block" id="sales-by-date">
+							<h2 class="block-header"><span class="icon sales-date-icon"></span>Total sales<br> by day</h2>
+							<p class="sum">$100’682</p>
+						</div>
+						<div class="sales-info-block" id="sales-by-solution">
+							<h2 class="block-header"><span class="icon sales-solution-icon"></span>Total sales<br> by solution</h2>				
+							<p class="sum">$202’682</p>
+						</div>
+						<div class="sales-info-block" id="sales-by-customer">
+							<h2 class="block-header"><span class="icon sales-customer-icon"></span>Average Sale<br> by Customer</h2>
+							<p class="sum">$789</p>
+						</div>
+					</div>
+					<div class="table-wraper">
+						<table class="table-base table-dashboard">
+							<thead>
+								<tr>
+									<th class="thumb-column">
+										<span class="icon sales-cup-icon"></span>
+									</th>
+									<th colspan="2">
+										<h2 class="block-header">Total sales<br> by product</h2>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="product-1">
+									<td class="thumb-column"><a href=""><img src="img/product/galaxy-tab-3.jpg" alt="Samsung Galaxy Tab 3"></a></td>
+									<td class="name-column"><a href="">Samsung Galaxy Tab 3</a></td>
+									<td class="price-column">$159.99</td>	
+								</tr>
+								<tr id="product-2">
+									<td class="thumb-column"><a href=""><img src="img/product/galaxy-3-lite.jpg" alt="Samsung Galaxy 3 Lite"></a></td>
+									<td class="name-column"><a href="">Samsung Galaxy 3 Lite</a></td>
+									<td class="price-column">$200.30</td>
+								</tr>
+								<tr id="product-3">
+									<td class="thumb-column"><a href=""><img src="img/product/galaxy-pro-12-2.jpg" alt="Samsung Galaxy Pro 12.2"></a></td>
+									<td class="name-column"><a href="">Samsung Galaxy Pro 12.2</a></td>
+									<td class="price-column">$778.01</td>
+								</tr>
+								<tr id="product-4">
+									<td class="thumb-column"><a href=""><img src="img/product/BT310BWEGUJ.jpg" alt="Samsung EF-BT310BWEGUJ"></a></td>
+									<td class="name-column"><a href="">Samsung EF-BT310BWEGUJ</a></td>
+									<td class="price-column">$320.35</td>
+								</tr>
+								<tr id="product-5">
+									<td class="thumb-column"><a href=""><img src="img/product/galaxy-3-lite.jpg" alt="Samsung Galaxy 3 Lite"></a></td>
+									<td class="name-column"><a href="">Samsung Galaxy 3 Lite</a></td>
+									<td class="price-column">$200.30</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</body>

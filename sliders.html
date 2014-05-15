@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title>Sliders</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link href="css/screen.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<!--[if lt IE 9]>
+		<script src="js/html5.js" type="text/javascript"></script>
+	<![endif]-->
+</head>
+<body id="sliders-page">
+	<div id="wraper">
+		<div id="left">
+			<div id="logo">
+				<a href="">
+					<img src="img/logo.jpg" alt="Site Logo">
+				</a>
+			</div>
+			<div id="user-logged">
+				<a href="">
+					<img src="img/admin_avatar.png" alt="User Avatar">
+					<span id="user-name">Admin_new</span>
+				</a>
+			</div>
+			<div id="adminmenuwrap">
+				<ul id="adminmenu">
+					<li><a href="dashboard.html" title="Dashboard"><span class="icon dashboard-icon"></span>Dashboard</a></li>
+					<li class="active"><a href="sliders.html" title="Sliders"><span class="icon sliders-icon"></span>Sliders</a></li>
+					<li><a href="solutions.html" title="Solutions"><span class="icon solutions-icon"></span>Solutions</a></li>
+					<li><a href="products.html" title="Products"><span class="icon products-icon"></span>Products</a></li>
+					<li><a href="orders.html" title="Orders"><span class="icon orders-icon"></span>Orders</a></li>
+					<li><a href="customize.html" title="Customization"><span class="icon customize-icon"></span>Customization</a></li>
+					<li><a href="customers.html" title="Customers"><span class="icon customers-icon"></span>Customers</a></li>
+					<li><a href="users.html" title="Users"><span class="icon users-icon"></span>Users</a></li>
+				</ul>
+				<a id="collapse-link"><span class="icon collapse-icon"></span>Collapse menu</a>
+			</div>
+		</div>
+		<div id="main">
+			<header id="header">
+				<div class="page-title">
+					<h1>Slider</h1>
+				</div>
+				<div id="header-nav">
+					<a href="add_slide.html" id="add-slide" class="btn link-btn">Add Slide</a>
+				</div>
+			</header>
+			<div id="content">
+				<form method="get">
+					<table class="table-base table-slides">
+						<thead>
+							<tr>
+								<th scope="col" class="check-column">
+									<input id="select-all" class="checkbox" type="checkbox"  />
+									<label for="select-all" class="checkbox-label"> </label>
+								</th>
+								<th scope="col" class="name-column sortable sorted desc"><a href="">Title<span class="icon sorting-icon"></span></a></th>
+								<th scope="col" class="date-column">Date</th>
+								<th scope="col" class="thumb-column">Thumbnail</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr id="slide-8">
+								<th scope="row" class="check-column">
+									<input id="slide-select-8" class="checkbox" type="checkbox"  />
+									<label for="slide-select-8" class="checkbox-label"> </label>
+								</th>
+								<td class="name-column"><a href="">Slide 08</a></td>
+								<td class="date-column">2014/04/21</td>
+								<td class="thumb-column"><a href=""><img src="img/slides/slide_08.jpg" alt="Slide 8"></a></td>
+							</tr>
+							<tr id="slide-6">
+								<th scope="row" class="check-column">
+									<input id="slide-select-6" class="checkbox" type="checkbox"  />
+									<label for="slide-select-6" class="checkbox-label"> </label>
+								</th>
+								<td class="name-column"><a href="">Slide 06</a></td>
+								<td class="date-column">2014/04/21</td>
+								<td class="thumb-column"><a href=""><img src="img/slides/slide_06.jpg" alt="Slide 6"></a></td>
+							</tr>
+
+							<tr id="slide-5">
+								<th scope="row" class="check-column">
+									<input id="slide-select-5" class="checkbox" type="checkbox"  />
+									<label for="slide-select-5" class="checkbox-label"> </label>
+								</th>
+								<td class="name-column"><a href="">Slide 05</a></td>
+								<td class="date-column">2014/04/21</td>
+								<td class="thumb-column"><a href=""><img src="img/slides/slide_05.jpg" alt="Slide 5"></a></td>
+							</tr>
+							<tr id="slide-4">
+								<th scope="row" class="check-column">
+									<input id="slide-select-4" class="checkbox" type="checkbox"  />
+									<label for="slide-select-4" class="checkbox-label"> </label>
+								</th>
+								<td class="name-column"><a href="">Slide 04</a></td>
+								<td class="date-column">2014/04/21</td>
+								<td class="thumb-column"><a href=""><img src="img/slides/slide_04.jpg" alt="Slide 4"></a></td>
+							</tr>
+							<tr id="slide-3">
+								<th scope="row" class="check-column">
+									<input id="slide-select-3" class="checkbox" type="checkbox"  />
+									<label for="slide-select-3" class="checkbox-label"> </label>
+								</th>
+								<td class="name-column"><a href="">Slide 03</a></td>
+								<td class="date-column">2014/04/21</td>
+								<td class="thumb-column"><a href=""><img src="img/slides/slide_03.jpg" alt="Slide 3"></a></td>
+							</tr>
+						</tbody>
+					</table>
+					<div id="bottom-nav">
+						<div class="bulk-actions">
+							<div class="form-group inline">
+								<select name="action-bottom" id="action-bottom">
+									<option value="0" selected="selected">Bulk Actions</option>
+									<option value="edit">Edit</option>
+									<option value="trash">Move to Trash</option>
+								</select>
+								<label for="action-bottom" class="select-label"></label>
+							</div>
+							<input type="submit" name="action-bottom-sumbit" id="action-bottom-sumbit" class="btn action" value="Apply">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>	
+</body>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title>Add Slide</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link href="css/screen.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/colorpicker.js"></script>
+	<script src="js/main.js"></script>
+	<!--[if lt IE 9]>
+		<script src="js/html5.js" type="text/javascript"></script>
+	<![endif]-->
+</head>
+<body id="add-slide-page">
+	<div id="wraper">
+		<div id="left">
+			<div id="logo">
+				<a href="">
+					<img src="img/logo.jpg" alt="Site Logo">
+				</a>
+			</div>
+			<div id="user-logged">
+				<a href="">
+					<img src="img/admin_avatar.png" alt="User Avatar">
+					<span id="user-name">Admin_new</span>
+				</a>
+			</div>
+			<div id="adminmenuwrap">
+				<ul id="adminmenu">
+					<li><a href="dashboard.html" title="Dashboard"><span class="icon dashboard-icon"></span>Dashboard</a></li>
+					<li  class="active"><a href="sliders.html" title="Sliders"><span class="icon sliders-icon"></span>Sliders</a></li>
+					<li><a href="solutions.html" title="Solutions"><span class="icon solutions-icon"></span>Solutions</a></li>
+					<li><a href="products.html" title="Products"><span class="icon products-icon"></span>Products</a></li>
+					<li><a href="orders.html" title="Orders"><span class="icon orders-icon"></span>Orders</a></li>
+					<li><a href="customize.html" title="Customization"><span class="icon customize-icon"></span>Customization</a></li>
+					<li><a href="customers.html" title="Customers"><span class="icon customers-icon"></span>Customers</a></li>
+					<li><a href="users.html" title="Users"><span class="icon users-icon"></span>Users</a></li>
+				</ul>
+				<a id="collapse-link"><span class="icon collapse-icon"></span>Collapse menu</a>
+			</div>
+		</div>
+		<div id="main">
+			<form method="post"> 
+				<header id="header">
+					<div class="page-title">
+						<h1>Add Slide</h1>
+					</div>
+					<div id="header-nav">
+						<input type="submit" class="btn" name="add-slide-header" id="add-slide-header" value="Add Slide">
+					</div>
+				</header>
+				<div id="content">
+					<div class="form-wraper">
+						<section id="section-slide-title" class="section wide-input">
+						    <header class="section-header">
+								<h4>Slide Title</h4>
+							</header>								
+							<div class="section-option">
+								<table class="table-form">
+									<tbody>
+										<tr>
+											<td class="wide-input-holder"><input id="slide-title" type="text" name="slide-title" value="" size="50" class="customize-input" placeholder="Enter Title Here"></td>
+											<td class="tip-holder"><span class="icon tip-icon tooltip" data-tooltip="Lorem ipsum dolor sit amet. ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "></span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>	
+						</section>
+						<section id="section-slide-caption" class="section wide-input">
+						    <header class="section-header">
+								<h4>Slide Caption</h4>
+							</header>								
+							<div class="section-option">
+								<table class="table-form">
+									<tbody>
+										<tr>
+											<td class="wide-input-holder"><textarea id="slide-caption" class="textarea" name="slide-caption" placeholder="Input your caption for slide (HTML tags are allowed)"></textarea></td>
+											<td class="tip-holder"><span class="icon tip-icon tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo."></span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>	
+						</section>
+						<section id="section-slide-upload" class="section wide-input">
+						    <header class="section-header">
+								<h4>Slide Image</h4>
+							</header>								
+							<div class="section-option">
+								<table class="table-form">
+									<tbody>
+										<tr>
+											<td class="wide-input-holder"><input id="slide-path" type="text" name="slide-path" value="" size="50" class="customize-input" placeholder="Input the slide URL (can be external link)"></td>
+											<td class="upload-button-holder"><div class="file-input-wraper"><input name="slide-upload" id="slide-upload" type="file"  class="upload-btn"></div></td>
+											<td class="tip-holder"><span class="icon tip-icon tooltip" data-tooltip="Lorem ipsum dolor sit amet"></span></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>	
+						</section>
+					</div>
+					<div id="bottom-nav">
+						<a href="sliders.html" class="btn grey-btn">Cancel</a>
+						<input type="submit" class="btn float-right" name="add-slide-bottom" id="add-slide-bottom" value="Add Slide">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>	
+</body>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title>Product info</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link href="css/screen.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/colorpicker.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/ckeditor.js"></script>
+	<!--[if lt IE 9]>
+		<script src="js/html5.js" type="text/javascript"></script>
+	<![endif]-->
+</head>
+<body id="product-info-page">
+	<div id="wraper">
+		<div id="left">
+			<div id="logo">
+				<a href="">
+					<img src="img/logo.jpg" alt="Site Logo">
+				</a>
+			</div>
+			<div id="user-logged">
+				<a href="">
+					<img src="img/admin_avatar.png" alt="User Avatar">
+					<span id="user-name">Admin_new</span>
+				</a>
+			</div>
+			<div id="adminmenuwrap">
+				<ul id="adminmenu">
+					<li><a href="dashboard.html" title="Dashboard"><span class="icon dashboard-icon"></span>Dashboard</a></li>
+					<li><a href="sliders.html" title="Sliders"><span class="icon sliders-icon"></span>Sliders</a></li>
+					<li><a href="solutions.html" title="Solutions"><span class="icon solutions-icon"></span>Solutions</a></li>
+					<li  class="active"><a href="products.html" title="Products"><span class="icon products-icon"></span>Products</a></li>
+					<li><a href="orders.html" title="Orders"><span class="icon orders-icon"></span>Orders</a></li>
+					<li><a href="customize.html" title="Customization"><span class="icon customize-icon"></span>Customization</a></li>
+					<li><a href="customers.html" title="Customers"><span class="icon customers-icon"></span>Customers</a></li>
+					<li><a href="users.html" title="Users"><span class="icon users-icon"></span>Users</a></li>
+				</ul>
+				<a id="collapse-link"><span class="icon collapse-icon"></span>Collapse menu</a>
+			</div>
+		</div>
+		<div id="main">
+			<form method="post"> 
+				<header id="header">
+					<div class="page-title">
+						<h1>Product info</h1>
+					</div>
+					<div id="header-nav">
+						<a href="products.html" class="btn grey-btn">Cancel</a>
+						<input type="submit" class="btn" name="save-header" id="save-header" value="Save Product">
+					</div>
+				</header>
+				<div id="content">
+					<div id="product-base-info">
+						<div id="product-img-holder">
+							<img src="img/product/BT310BWEGUJ-big.jpg" alt="Samsung BT310BWEGUJ">
+						</div>
+						<div id="product-title-cat">
+							<div id="product-title">
+								<header>
+									<h4>Product Title</h4>
+								</header>	
+								<input type="text" name="product-title" id="product-tittle"  value="Samsung Galaxy 3 Lite"  placeholder="">
+							</div>
+							<div class="block-separator"></div>
+							<div id="product-categories-holder">
+								<header>
+									<h4 class="float-left">Product Categories</h4>
+									<a href="" id="add-cat-link" class="green-link float-right">+ Add New Category</a>
+								</header>
+								<div id="product-categories">
+									<div class="form-group">
+										<input id="product-cat-1" name="product-cat-1" class="checkbox" type="checkbox" value="products" />
+										<label for="product-cat-1" class="checkbox-label">Products</label>
+									</div>
+									<div class="form-group">
+										<input id="product-cat-2" name="product-cat-2" class="checkbox" type="checkbox" value="solutions" />
+										<label for="product-cat-2" class="checkbox-label">Solutions</label>
+									</div>
+									<div class="form-group">
+										<input id="product-cat-3" name="product-cat-3" class="checkbox" type="checkbox" value="smartphones" />
+										<label for="product-cat-3" class="checkbox-label">Smartphones</label>
+									</div>
+									<div class="form-group">
+										<input id="product-cat-4" name="product-cat-4" class="checkbox" type="checkbox" value="smartwatches" />
+										<label for="product-cat-4" class="checkbox-label">Tablet Cases</label>
+									</div>
+									<div class="form-group">
+										<input id="product-cat-5" name="product-cat-5" class="checkbox" type="checkbox" value="tablet-cases" />
+										<label for="product-cat-5" class="checkbox-label">Tablets</label>
+									</div>
+									<div class="form-group">
+										<input id="product-cat-6" name="product-cat-6" class="checkbox" type="checkbox" value="tablets" />
+										<label for="product-cat-6" class="checkbox-label">Smartphones</label>
+									</div>
+									<div class="form-group">
+										<input id="product-cat-7" name="product-cat-7" class="checkbox" type="checkbox" value="smartphones" />
+										<label for="product-cat-7" class="checkbox-label">Smartphones</label>
+									</div>
+									<div class="form-group">
+										<input id="product-cat-8" name="product-cat-8" class="checkbox" type="checkbox" value="products" />
+										<label for="product-cat-8" class="checkbox-label">Products</label>
+									</div>
+									<div class="form-group">
+										<input id="product-cat-9" name="product-cat-9" class="checkbox" type="checkbox" value="products" />
+										<label for="product-cat-9" class="checkbox-label">Products</label>
+									</div>
+									<div class="form-group">
+										<input id="product-cat-10" name="product-cat-10" class="checkbox" type="checkbox" value="products" />
+										<label for="product-cat-10" class="checkbox-label">Products</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block-separator"></div>
+					<div id="product-tabs" class="tabs">
+					    <ul class="tab-links">
+					        <li class="active"><a href="#general-tab">General</a></li>
+					        <li><a href="#inventory-tab">Inventory</a></li>
+					        <li><a href="#shipping-tab">Shipping</a></li>
+					        <li><a href="#linked-prod-tab">Linked Prod.</a></li>
+					        <li><a href="#advanced-tab">Advanced</a></li>
+					    </ul>
+					    <div class="tab-content">
+						    <section id="section-product-data" class="section wide-input">
+							    <header class="section-header">
+									<h4>Product Data</h4>
+								</header>								
+								<div class="section-option">
+									<table class="table-form">
+										<tbody>
+											<tr>
+												<td class="wide-input-holder">
+													<div class="form-group inline full-width">
+														<select name="product-data-select" id="product-data-select" class="customize-input  customize-select">
+															<option value="simple" selected="selected">Simple product</option>
+															<option value="grouped">Grouped product</option>
+															<option value="external">External/Affiliate product</option>
+															<option value="variable">Variable product</option>
+															<option value="bto">Composite product</option>
+														</select>
+														<label for="product-data-select" class="select-label"></label>
+													</div>
+												</td>
+												<td class="checkbox-holder">
+													<div class="form-group inline">
+														<input id="product-virtual" name="product-virtual" class="checkbox" type="checkbox" value="virtual" />
+														<label for="product-virtual" class="checkbox-label">Virtual</label>
+													</div>
+													<div class="form-group inline">
+														<input id="product-downloadable" name="product-downloadable" class="checkbox" type="checkbox" value="downloadable" />
+														<label for="product-downloadable" class="checkbox-label">Downloadable</label>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>	
+							</section>
+					        <div id="general-tab" class="tab active">
+					        	<section id="section-SKU" class="section wide-input">
+								    <header class="section-header">
+										<h4>SKU</h4>
+									</header>								
+									<div class="section-option">
+										<table class="table-form">
+											<tbody>
+												<tr>
+													<td class="wide-input-holder"><input id="SKU" type="text" name="SKU" value="" size="50" class="customize-input" placeholder=""></td>
+													<td class="tip-holder"><span class="icon tip-icon tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo."></span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>	
+								</section>
+								<section id="section-reg-price" class="section wide-input">
+								    <header class="section-header">
+										<h4>Regular Price ($)</h4>
+									</header>								
+									<div class="section-option">
+										<table class="table-form">
+											<tbody>
+												<tr>
+													<td class="wide-input-holder"><input id="reg-price" type="text" name="reg-price" size="50" class="customize-input" placeholder=""></td>
+													<td class="tip-holder"><span class="icon tip-icon tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo."></span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>	
+								</section>
+								<section id="section-sale-price" class="section wide-input">
+								    <header class="section-header">
+										<h4>Sale Price ($)</h4>
+									</header>								
+									<div class="section-option">
+										<table class="table-form">
+											<tbody>
+												<tr>
+													<td class="wide-input-holder">
+														<div class="form-group inline full-width">
+															<input id="sale-price" type="text" name="sale-price" size="50" class="customize-input" placeholder="">
+															<a href="" id="schedule-link" class="green-link">Schedule</a>
+														</div>
+														</td>
+													<td class="tip-holder"><span class="icon tip-icon tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo."></span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>	
+								</section>
+					        </div>
+					        <div id="inventory-tab" class="tab">
+					        	<section id="section-manage-stock" class="section wide-input">
+								    <header class="section-header">
+										<h4>Manage stock</h4>
+									</header>								
+									<div class="section-option">
+										<div class="form-group inline">
+											<input id="manage-stock" name="manage-stock" class="checkbox" type="checkbox" value="downloadable" />
+											<label for="manage-stock" class="checkbox-label">Enable stock management at product level (not needed if managing stock at variation level)</label>
+										</div>
+									</div>	
+								</section>
+					        	<section id="section-stock-qty" class="section wide-input">
+								    <header class="section-header">
+										<h4>Stock Qty</h4>
+									</header>								
+									<div class="section-option">
+										<table class="table-form">
+											<tbody>
+												<tr>
+													<td class="wide-input-holder"><input id="stock-qty" type="number" name="stock-qty" min="0"  class="customize-input" placeholder=""></td>
+													<td class="tip-holder"><span class="icon tip-icon tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo."></span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>	
+								</section>
+								<section id="section-stock-status" class="section wide-input">
+								    <header class="section-header">
+										<h4>Stock status</h4>
+									</header>								
+									<div class="section-option">
+										<table class="table-form">
+											<tbody>
+												<tr>
+													<td class="wide-input-holder">
+														<div class="form-group inline full-width">
+															<select name="stock-status" id="stock-status" class="customize-input  customize-select">
+																<option value="in-stock" selected="selected">In stock</option>
+																<option value="out-stock">Out stock</option>
+															</select>
+															<label for="stock-status" class="select-label"></label>
+														</div>
+													</td>
+													<td class="tip-holder"><span class="icon tip-icon tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo."></span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>	
+								</section>
+								<section id="section-backorder-status" class="section wide-input">
+								    <header class="section-header">
+										<h4>Allow Backorders?</h4>
+									</header>								
+									<div class="section-option">
+										<table class="table-form">
+											<tbody>
+												<tr>
+													<td class="wide-input-holder">
+														<div class="form-group inline full-width">
+															<select name="backorder-status" id="backorder-status" class="customize-input  customize-select">
+																<option value="no">Do not allow</option>
+																<option value="notify">Allow, but notify customer</option>
+																<option value="yes">Allow</option>
+															</select>
+															<label for="backorder-status" class="select-label"></label>
+														</div>
+													</td>
+													<td class="tip-holder"><span class="icon tip-icon tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo."></span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>	
+								</section>
+								<section id="section-sort-indv" class="section wide-input">
+								    <header class="section-header">
+										<h4>Sold Individually</h4>
+									</header>								
+									<div class="section-option">
+										<div class="form-group inline">
+											<input id="sort-indv" name="sort-indv" class="checkbox" type="checkbox" value="downloadable" />
+											<label for="sort-indv" class="checkbox-label">Enable this to only allow one of this item to be bought in a single order</label>
+										</div>
+									</div>	
+								</section>
+					        </div>
+					        <div id="shipping-tab" class="tab">
+					        	<section id="section-weight" class="section wide-input">
+								    <header class="section-header">
+										<h4>Weight (kg)</h4>
+									</header>								
+									<div class="section-option">
+										<table class="table-form">
+											<tbody>
+												<tr>
+													<td class="wide-input-holder"><input id="weight" type="number" name="weight" min="0" class="customize-input" placeholder=""></td>
+													<td class="tip-holder"><span class="icon tip-icon tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo."></span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>	
+								</section>
+								<section id="section-dimensions" class="section wide-input">
+								    <header class="section-header">
+										<h4>Dimensions (cm)</h4>
+									</header>								
+									<div class="section-option">
+										<table class="table-form">
+											<tbody>
+												<tr>
+													<td class="third-input-holder">
+														<input id="dimensions-length" type="number" name="dimensions-length" min="0" class="customize-input" placeholder="Length">
+													</td>
+													<td class="third-input-holder">
+														<input id="dimensions-width" type="number" name="dimensions-width" min="0" class="customize-input" placeholder="Width">
+													</td>
+													<td class="third-input-holder">
+														<input id="dimensions-height" type="number" name="dimensions-height" min="0" class="customize-input" placeholder="Height">
+													</td>
+													<td class="tip-holder"><span class="icon tip-icon tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo."></span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>	
+								</section>
+								<section id="section-shipping-class" class="section wide-input">
+								    <header class="section-header">
+										<h4>Shipping class</h4>
+									</header>								
+									<div class="section-option">
+										<table class="table-form">
+											<tbody>
+												<tr>
+													<td class="wide-input-holder">
+														<div class="form-group inline full-width">
+															<select name="shipping-class" id="shipping-class" class="customize-input  customize-select">
+																<option value="-1" selected="selected">No shipping class</option>
+															</select>
+															<label for="shipping-class" class="select-label"></label>
+														</div>
+														</td>
+													<td class="tip-holder"><span class="icon tip-icon tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo."></span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>	
+								</section>
+					        </div>
+					        <div id="linked-prod-tab" class="tab">
+					        	<section id="section-up-sells" class="section wide-input">
+								    <header class="section-header">
+										<h4>Up-Sells</h4>
+									</header>								
+									<div class="section-option">
+										<table class="table-form">
+											<tbody>
+												<tr>
+													<td class="wide-input-holder"><input id="up-sells" type="text" name="up-sells" size="50"  class="customize-input" placeholder="Search for a product..."></td>
+													<td class="tip-holder"><span class="icon tip-icon tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo."></span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>	
+								</section>
+								<section id="section-cross-sells" class="section wide-input">
+								    <header class="section-header">
+										<h4>Cross-Sells</h4>
+									</header>								
+									<div class="section-option">
+										<table class="table-form">
+											<tbody>
+												<tr>
+													<td class="wide-input-holder"><input id="cross-sells" type="text" name="cross-sells" size="50"  class="customize-input" placeholder="Search for a product..."></td>
+													<td class="tip-holder"><span class="icon tip-icon tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo."></span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>	
+								</section>
+								<section id="section-grouping" class="section wide-input">
+								    <header class="section-header">
+										<h4>Grouping</h4>
+									</header>								
+									<div class="section-option">
+										<table class="table-form">
+											<tbody>
+												<tr>
+													<td class="wide-input-holder">
+														<div class="form-group inline full-width">
+															<select name="grouping" id="grouping" class="customize-input  customize-select">
+																<option value="-1" selected="selected">Choose a grouped product...</option>
+															</select>
+															<label for="grouping" class="select-label"></label>
+														</div>
+													</td>
+													<td class="tip-holder"><span class="icon tip-icon tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo."></span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>	
+								</section>
+					        </div>
+					        <div id="advanced-tab" class="tab">
+					        	<section id="section-purchase-note" class="section wide-input">
+								    <header class="section-header">
+										<h4>Purchase Note</h4>
+									</header>								
+									<div class="section-option">
+										<table class="table-form">
+											<tbody>
+												<tr>
+													<td class="wide-input-holder"><textarea id="purchase-note" class="textarea" name="purchase-note" placeholder="Text Example"></textarea></td>
+													<td class="tip-holder"><span class="icon tip-icon tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo."></span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>	
+								</section>
+					        	<section id="section-menu-order" class="section wide-input">
+								    <header class="section-header">
+										<h4>Menu Order</h4>
+									</header>								
+									<div class="section-option">
+										<table class="table-form">
+											<tbody>
+												<tr>
+													<td class="wide-input-holder"><input id="menu-order" type="text" name="menu-order" size="50"  class="customize-input" placeholder="0"></td>
+													<td class="tip-holder"><span class="icon tip-icon tooltip" data-tooltip="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo."></span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>	
+								</section>
+								<section id="section-reviews-status" class="section wide-input">
+								    <header class="section-header">
+										<h4>Enable reviews</h4>
+									</header>								
+									<div class="section-option">
+										<div class="form-group inline">
+											<input id="reviews-status" name="reviews-status" class="checkbox" type="checkbox" value="downloadable" />
+											<label for="reviews-status" class="checkbox-label"></label>
+										</div>
+									</div>	
+								</section>
+					        </div>
+					    </div>
+					</div>
+					<div class="block-separator"></div>
+					<textarea class="ckeditor" name="editor1" style="margin-top: 3em;">&lt;p&gt;&lt;b&gt;Super Light, Slim Design&lt;/b&gt;nTab3 Lite is designed for ultra portability to carry with ease everywhere. Slimmer than other models at only 9,7 mm deep, its concise form factor is sure to please. Enjoy the most comfortable hand grip, complemented by its extreme light weight - feel the difference! Beautifully compact with long-lasting power -- what more could you ask?nn&lt;b&gt;Optimal Viewing Experience&lt;/b&gt;nTab3 Lite’s high resolution screen showcases your entertainment to the maximum. Brighter images and sharper text without the status bar blocking the view -- larger, roomier screen space enhances your viewing pleasure.nn1.2 GHz Dual Core ProcessornStrong, fast processor powers your device to enjoy videos, games, apps and web surfing without limit for the most enjoyable multimedia tablet experience yet.nn&lt;b&gt;Smart Camera with Fun Features&lt;/b&gt;nRear camera is equipped with smart features that let you compose perfect shots every time. Whether picturesque landscapes or that perfect pic where everyone’s smiling, shoot like a pro and share right away -- smart sharing features make it easy.nn&lt;b&gt;Fun &amp;amp; Sharable Services&lt;/b&gt;nTens of thousands of apps at your fingertips -- all especially geared for Tab3 Lite and easily downloadable for maximum enjoyment.&lt;/p&gt;
+					</textarea>
+					
+					<div id="bottom-nav">
+						<a href="products.html" class="btn grey-btn">Cancel</a>
+						<input type="submit" class="btn" name="save-bottom" id="save-bottom" value="Save Product">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>	
+</body>
