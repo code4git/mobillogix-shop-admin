@@ -46,65 +46,144 @@
 					<h1>Dashboard</h1>
 				</div>
 				<div id="header-nav">
-					<a href="" id="choose-date-range" class="btn link-btn">Choose Date Range</a>
+					<ul class="date-choose">
+						<li class="active"><a href="">Today</a></li>
+						<li><a href="">Yesterday</a></li>
+						<li><a href="">Week to Date</a></li>
+						<li><a href="">Month to Date</a></li>
+					</ul>
 				</div>
 			</header>
 			<div id="content">
 				<div class="dash-start">
 					<div class="overview-wrap">
-						<div class="sales-info-block" id="sales-by-date">
-							<h2 class="block-header"><span class="icon sales-date-icon"></span>Total sales<br> by day</h2>
-							<p class="sum">$100’682</p>
-						</div>
-						<div class="sales-info-block" id="sales-by-solution">
-							<h2 class="block-header"><span class="icon sales-solution-icon"></span>Total sales<br> by solution</h2>				
-							<p class="sum">$202’682</p>
-						</div>
-						<div class="sales-info-block" id="sales-by-customer">
-							<h2 class="block-header"><span class="icon sales-customer-icon"></span>Average Sale<br> by Customer</h2>
-							<p class="sum">$789</p>
+						<div class="sales-info-block" id="total-sales">
+							<h2 class="block-header"><span class="icon total-sales-icon"></span>Total sales:</h2>				
+							<span class="sum">$615’682</span>
 						</div>
 					</div>
-					<div class="table-wraper">
-						<table class="table-base table-dashboard">
-							<thead>
-								<tr>
-									<th class="thumb-column">
-										<span class="icon sales-cup-icon"></span>
-									</th>
-									<th colspan="2">
-										<h2 class="block-header">Total sales<br> by product</h2>
-									</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr id="product-1">
-									<td class="thumb-column"><a href=""><img src="img/product/galaxy-tab-3.jpg" alt="Samsung Galaxy Tab 3"></a></td>
-									<td class="name-column"><a href="">Samsung Galaxy Tab 3</a></td>
-									<td class="price-column">$159.99</td>	
-								</tr>
-								<tr id="product-2">
-									<td class="thumb-column"><a href=""><img src="img/product/galaxy-3-lite.jpg" alt="Samsung Galaxy 3 Lite"></a></td>
-									<td class="name-column"><a href="">Samsung Galaxy 3 Lite</a></td>
-									<td class="price-column">$200.30</td>
-								</tr>
-								<tr id="product-3">
-									<td class="thumb-column"><a href=""><img src="img/product/galaxy-pro-12-2.jpg" alt="Samsung Galaxy Pro 12.2"></a></td>
-									<td class="name-column"><a href="">Samsung Galaxy Pro 12.2</a></td>
-									<td class="price-column">$778.01</td>
-								</tr>
-								<tr id="product-4">
-									<td class="thumb-column"><a href=""><img src="img/product/BT310BWEGUJ.jpg" alt="Samsung EF-BT310BWEGUJ"></a></td>
-									<td class="name-column"><a href="">Samsung EF-BT310BWEGUJ</a></td>
-									<td class="price-column">$320.35</td>
-								</tr>
-								<tr id="product-5">
-									<td class="thumb-column"><a href=""><img src="img/product/galaxy-3-lite.jpg" alt="Samsung Galaxy 3 Lite"></a></td>
-									<td class="name-column"><a href="">Samsung Galaxy 3 Lite</a></td>
-									<td class="price-column">$200.30</td>
-								</tr>
-							</tbody>
-						</table>
+					<div class="dash-table-wraper">
+						<div class="row">
+							<table class="table-base table-dashboard table-sales-solutions">
+								<thead>
+									<tr>
+										<th class="thumb-column">
+											<span class="icon sales-solution-icon"></span>
+										</th>
+										<th colspan="2" class="title-column">
+											<h2 class="block-header">Total sales by solution</h2>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr id="sales-taas">
+										<td class="thumb-column"><a href=""><img src="img/solution/taas-small.jpg" alt="Taas"></a></td>
+										<td class="name-column"><a href="">Taas</a></td>
+										<td class="price-column">$159.99</td>	
+									</tr>
+									<tr id="sales-emm">
+										<td class="thumb-column"><a href=""><img src="img/solution/emm-small.jpg" alt="Emm"></a></td>
+										<td class="name-column"><a href="">Emm</a></td>
+										<td class="price-column">$200.30</td>
+									</tr>
+									<tr id="sales-byod">
+										<td class="thumb-column"><a href=""><img src="img/solution/byod-small.jpg" alt="Byod"></a></td>
+										<td class="name-column"><a href="">Byod</a></td>
+										<td class="price-column">$778.01</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table-base table-dashboard table-sales-products">
+								<thead>
+									<tr>
+										<th class="thumb-column">
+											<span class="icon sales-product-icon"></span>
+										</th>
+										<th colspan="2" class="title-column">
+											<h2 class="block-header">Total sales by product</h2>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr id="product-1">
+										<td class="thumb-column"><a href=""><img src="img/product/galaxy-tab-3.jpg" alt="Samsung Galaxy Tab 3"></a></td>
+										<td class="name-column"><a href="">Samsung Galaxy Tab 3</a></td>
+										<td class="price-column">$159.99</td>	
+									</tr>
+									<tr id="product-2">
+										<td class="thumb-column"><a href=""><img src="img/product/galaxy-3-lite.jpg" alt="Samsung Galaxy 3 Lite"></a></td>
+										<td class="name-column"><a href="">Samsung Galaxy 3 Lite</a></td>
+										<td class="price-column">$200.30</td>
+									</tr>
+									<tr id="product-3">
+										<td class="thumb-column"><a href=""><img src="img/product/galaxy-pro-12-2.jpg" alt="Samsung Galaxy Pro 12.2"></a></td>
+										<td class="name-column"><a href="">Samsung Galaxy Pro 12.2</a></td>
+										<td class="price-column">$778.01</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="row">
+							<table class="table-base table-dashboard table-sales-users">
+								<thead>
+									<tr>
+										<th class="thumb-column" >
+											<span class="icon sales-users-icon"></span>
+										</th>
+										<th class="title-column" colspan="3">
+											<h2 class="block-header">Total sales by user</h2>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr id="user-1">
+										<td  class="name-column" colspan="2"><a href="">Tim Stanley</a></td>
+										<td></td>
+										<td class="price-column">$159.99</td>	
+									</tr>
+									<tr id="user-2">
+										<td class="name-column"  colspan="2"><a href="">Kathryn Chapman</a></td>
+										<td></td>
+										<td class="price-column">$200.30</td>
+									</tr>
+									<tr id="user-3">
+										<td class="name-column"  colspan="2"><a href="">Violet Jones</a></td>
+										<td></td>
+										<td class="price-column">$778.01</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table-base table-dashboard table-sales-customers">
+								<thead>
+									<tr>
+										<th class="thumb-column">
+											<span class="icon sales-customer-icon"></span>
+										</th>
+										<th class="title-column" colspan="3">
+											<h2 class="block-header">Total sales by customer</h2>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr id="customer-1">
+										<td class="name-column"  colspan="2"><a href="">ACME Enterprises LLC</a></td>
+										<td></td>
+										<td class="price-column">$159.99</td>	
+									</tr>
+									<tr id="customer-2">
+										<td class="name-column"  colspan="2"><a href="">zKillboard</a></td>
+										<td></td>
+										<td class="price-column">$200.30</td>
+									</tr>
+									<tr id="customer-3">
+										<td class="name-column"  colspan="2"><a href="">Running Gags</a></td>
+										<td></td>
+										<td class="price-column">$778.01</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
 					</div>
 				</div>
 			</div>
