@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html> 
 <head>
-<title>Order #440</title>
+<title>Order #440 RFQ</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
@@ -43,10 +43,9 @@
 		<div id="main">
 			<header id="header">
 				<div class="page-title">
-					<h1>Order #440
+					<h1>Order #440 RFQ
 						<small id="order-date">April 28, 2014, 6:39pm MST</small>
-					</h1>
-					
+					</h1>				
 				</div>
 				<div id="header-nav">
 					
@@ -54,14 +53,15 @@
 			</header>
 			<div id="content">
 				<form method="get">
-					<table class="table-base table-order">
+					<table class="table-base table-order-rfq">
 						<thead>
 							<tr>
 								<th scope="col" class="thumb-column">Image</th>
 								<th scope="col" class="name-column sortable sorted desc"><a href="">Name<span class="icon sorting-icon"></span></a></th>
 								<th scope="col" class="supplier-column sortable"><a href="">Supplier<span class="icon sorting-icon"></span></a></th>
-								<th scope="col" class="qty-column sortable"><a href="">Qty<span class="icon sorting-icon"></span></a></th>
-								<th scope="col" class="price-column sortable"><a href="">Price<span class="icon sorting-icon"></span></a></th>
+								<th scope="col" class="qty-column">Qty</th>
+								<th scope="col" class="discount-column">Discount</th>
+								<th scope="col" class="price-column">Price</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -70,52 +70,56 @@
 								<td class="name-column"><a href="">Samsung Galaxy Tab 3</a></td>
 								<td class="supplier-column">TechData</td>
 								<td class="qty-column">1 x $24.99</td>
-								<td class="price-column">$24.99</td>
+								<td class="discount-column">5%</td>
+								<td class="price-column">$23.75</td>
 							</tr>
 							<tr id="order-item-2">
 								<td class="thumb-column"><a href=""><img src="img/product/galaxy-3-lite.jpg" alt="Samsung Galaxy 3 Lite"></a></td>
 								<td class="name-column"><a href="">Samsung Galaxy 3 Lite</a></td>
 								<td class="supplier-column">IngramMicro</td>
 								<td class="qty-column">1 x $164.99</td>
-								<td class="price-column">$164.00</td>
+								<td class="discount-column">5% </td>
+								<td class="price-column">$155.80</td>
 							</tr>
 							<tr id="order-item-3">
 								<td class="thumb-column"><a href=""><img src="img/product/galaxy-pro-12-2.jpg" alt="Samsung Galaxy Pro 12.2"></a></td>
 								<td class="name-column"><a href="">Samsung Galaxy Pro 12.2</a></td>
 								<td class="supplier-column">IngramMicro</td>
 								<td class="qty-column">1 x $580.00</td>
-								<td class="price-column">$580.00</td>
+								<td class="discount-column">$30.00</td>
+								<td class="price-column">$550.00</td>
 							</tr>
 							<tr id="order-item-4">
 								<td class="thumb-column"><a href=""><img src="img/product/BT310BWEGUJ.jpg" alt="Samsung EF-BT310BWEGUJ"></a></td>
 								<td class="name-column"><a href="">Samsung EF-BT310BWEGUJ</a></td>
 								<td class="supplier-column">IngramMicro</td>
 								<td class="qty-column">1 x $229.00</td>
-								<td class="price-column">$229.00</td>
+								<td class="discount-column">$10.00</td>
+								<td class="price-column">$219.00</td>
 							</tr>
 						</tbody>
 						<tfoot>
 							<tr>
-								<td class="total-column" colspan="4" >Subtotal:</td>
+								<td class="total-column" colspan="5" >Subtotal:</td>
 								<td  class="price-column" colspan="1" >$229.00</td>
 							</tr>
 							<tr>
-								<td class="total-column" colspan="4" >Shipping:</td>
+								<td class="total-column" colspan="5" >Shipping:</td>
 								<td  class="price-column" colspan="1" >$4.95</td>
 							</tr>
 							<tr>
-								<td class="total-column" colspan="4" >Discount:</td>
+								<td class="total-column" colspan="5" >Discount:</td>
 								<td  class="price-column" colspan="1" ><a href="" class="green-link">Add</a></td>
 							</tr>
 							<tr class="total-row">
-								<td class="total-column" colspan="4" >Total:</td>
+								<td class="total-column" colspan="5" >Total:</td>
 								<td  class="price-column" colspan="1" >$1002.94</td>
 							</tr>
 						</tfoot>
 					</table>
 					<div id="bottom-nav">
 						<a href="" class="btn grey-btn">Refund</a>
-						<a id="validate-order" href="" class="btn link-btn float-right popup-link-1">Validate price & availability</a>
+						<a href="order-rfq-approved.html" class="float-right" >Quote was successfully sent for approval!</a>
 					</div>
 					<div id="order-tabs" class="tabs">
 					    <ul class="tab-links">
@@ -1085,19 +1089,10 @@
 					<div class="block-separator"></div>
 					<div class="row confirm-order">
 						<p class="float-left confirm-code">Confirmation code:</p>
-						<input type="submit" class="btn float-right" name="submit-order" id="place-order" value="Submit Order">
+						<input type="submit" class="btn float-right" name="place-order" id="submit-order" value="Submit Order">
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>	
-	<div class="popup-box" id="popup-box-1">
-	    <div class="header">
-	        <h2>Real-time pricing & availability</h2>
-	    </div>
-	    <div class="content">
-	        The item(s) have been updated with the current<br> real-time pricing and warehouse availability.
-	    </div>
-   		<div class="close btn">OK</div>
-	</div>
 </body>

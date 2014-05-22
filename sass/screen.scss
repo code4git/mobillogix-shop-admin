@@ -16,7 +16,7 @@ $font-bold: "roboto_slabbold", Helvetica, Arial, "Lucida Grande", sans-serif;
 html, body {height: 100%;margin: 0;padding: 0;}
 body {font-size: 14px; background: #f7f7f7;font-family: $font-main;-webkit-font-smoothing: antialiased; line-height: 1.42857em; width: 100%; }
 #wraper {height: auto;min-height: 100%;width: 100%;min-width: 640px;position: relative; }
-a {text-decoration: none; }
+a {text-decoration: none; color: #8fc64a;}
 h1, h2, h3, h4, h5, h6 {font-family: $font-thin; }
 h1 {margin:0; font-size: 2em; padding: 0px 0px 0em 0px;}
 #main:before, #main:after, .section:before, .section:after, .row:after, .row:before {content: ""; display: table;clear: both;}
@@ -76,7 +76,7 @@ label.select-label {position: absolute;width: 8px;height: 5px;right: 8px;display
 #main.open {margin-left: 15em; }
 #main.close {margin-left: 5em;}
 /*main - header */
-#header {overflow: hidden;  padding: 2.3em 0em 2.3em 0; min-height: 95px; box-sizing: border-box;}
+#header {overflow: hidden;  padding: 2.3em 0em 2.3em 0; min-height: 95px; box-sizing: border-box; position: relative;}
 #header-nav {float: right;}
 .page-title {float: left;}
 .form-group { position: relative; margin: 0 5px 0 0;}
@@ -239,7 +239,7 @@ ul.im-ex-port {float: left; display: inline-block;margin: 0 1em 0 0em;}
 .confirm-code {color: #727579; margin-top: 5px;}
 .row.confirm-order {margin-bottom: 3em;}
 h1 small#order-date {font-size: 16px;}
-#approval-order {margin: 0 1em 0 0;}
+#header .approved {position: absolute;right: 0;top: 33px; color: #8fc64a;}
 
 /*main - content - tabs */
 .tabs { width:100%;display:inline-block;}
@@ -318,12 +318,19 @@ width: 30px;height: 30px;background: url(../img/color-picker.png) no-repeat;@inc
 #pagination {float: right;}
 .pagination li {float: left; display: block;}
 .pagination li a, .pagination li span {@include transition-property(all);@include transition-duration(0.2s);@include transition-timing-function(ease-in); border: 1px solid #dbdee4; font-size: 0.8571em; border-right:none;color: #5e5e5e;  padding: 0em 0.9em 0em; display: block; line-height: 28px}
-.pagination li:nth-child(2) a, .pagination li:nth-child(2) span {border-top-left-radius: 3px; border-bottom-left-radius: 3px;}
-.pagination li:nth-last-child(2) a, .pagination li:nth-last-child(2) span {border-right: 1px solid #dbdee4; border-top-right-radius: 3px; border-bottom-right-radius: 3px;}
+.pagination li:nth-child(2) a, .pagination li:nth-child(2) span {@include border-radius(3px 0 0px 3px);}
+.pagination li:nth-last-child(2) a, .pagination li:nth-last-child(2) span {border-right: 1px solid #dbdee4; @include border-radius(0px 3px 3px 0px);}
 .pagination li.prev a, .pagination li.next a { @include border-radius(3px); border-right: 1px solid #dbdee4; }
 .pagination li.prev a {margin: 0 0.7143em 0 0;}
 .pagination li.next a {margin: 0 0 0 0.7143em;}
 .pagination li.current span, .pagination li a:hover, .pagination li a:focus, .pagination li a:active {background: #8fc64a; border-color: transparent; color: #fff;} 
+
+/* pop up */
+.popup-box { width: 420px;position: absolute;@include border-radius(3px);background: #fff; display: none; border:1px solid #dee2e6;z-index: 9999999;font-size: 1em; padding: 2em 2em; border-box: box-sizing;}
+.popup-box .close {margin: 2em auto 0;width: 55px;display: block;box-sizing: border-box;text-align: center;}
+.popup-box .content {text-align: center;}
+.popup-box h2 { padding: 0;margin: 0 0 1.5em;text-align: center;font-family: $font-bold;}
+#blackout {background: rgba(0,0,0,0.5);position: absolute;top: 0; overflow: hidden;z-index: 999999;left: 0;display: none;}
 
 /* icons */
 span.sales-cup-icon {width: 40px;height: 34px;background-position: 0 -183px;margin: 0 2em 0 1.5em;}
@@ -352,6 +359,7 @@ span.process-icon {width: 12px;height: 3px;background-position: 0 -335px;margin:
 span.complete-icon {width: 8px;height: 8px;background-position: 0 -341px;margin: 0 7px 0 0;}
 span.view-icon {width: 10px;height: 7px;background-position: 0 -350px;margin: -1px 7px 0 0;}
 span.tip-icon {width: 14px;height: 14px;background-position: 0 -423px; cursor: pointer;}
+span.approved-icon {width: 17px;height: 19px;background-position: 0 -593px;margin: -2px 0.3em 0 0;}
 .table-base thead th.sortable.sorted.desc span.sorting-icon { @include inline-block;}
 .table-base thead th.sortable.sorted.asc span.sorting-icon { @include inline-block; background-position: -10px -175px;}
 /* icons - hover*/
