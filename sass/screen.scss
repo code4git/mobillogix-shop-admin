@@ -35,7 +35,7 @@ input[type=checkbox].checkbox + label.checkbox-label, input[type=radio].radio + 
 input[type=checkbox].checkbox:checked + label.checkbox-label {background-position: 0 -16px;}
 input[type=radio].radio + label.radio-label {background-position: 0 -36px;}
 input[type=radio].radio:checked + label.radio-label {background-position: 0 -55px;}
-label.select-label {position: absolute;width: 8px;height: 5px;right: 8px;display: block;top: 13px;background: url(../img/sprite.png) 0 -175px no-repeat;}
+select {z-index: 1;}
 .checkbox-label, .radio-label {background-image:url(../img/check-boxes.png);}
 ::-webkit-input-placeholder { color:    #282828;}
 :-moz-placeholder {color:    #282828;opacity:  1;}
@@ -205,7 +205,7 @@ ul.im-ex-port {float: left; display: inline-block;margin: 0 1em 0 0em;}
 .table-form {width: 100%;}
 .table-form tbody tr:first-child td{padding-bottom: 10px;}
 .table-form .wide-input-holder {width: 100%; padding: 0 2em 0 0;}
-.table-form .wide-input-holder input, .table-form .wide-input-holder select {width: 100%;}
+.table-form .wide-input-holder input, .table-form .wide-input-holder select {width: 100% !important;}
 .table-form .third-input-holder {width: 32%; padding: 0 0.75em 0 0}
 .table-form .third-input-holder input {width: 100%;}
 .table-form .tip-holder {text-align: right;}
@@ -383,6 +383,17 @@ span.tip-icon:hover {background-position: -17px -423px;}
 .table-base thead th.sortable a:hover span.sorting-icon { @include inline-block;}
 .table-base thead th.sortable.sorted.desc a:hover span.sorting-icon {background-position: -10px -175px;}
 .table-base thead th.sortable.sorted.asc a:hover span.sorting-icon {background-position: -0px -175px;}
+span.customSelect {display: block !important;
+padding: 0.3em 1.5em 0.3em 0.71em;border: 1px solid #dbdee4;outline: 0;
+font-size: 0.8571em;height: 21px;background: transparent;color: #282828;@include border-radius(3px);  @include box-shadow (none);}
+span.customSelect.changed {	background-color: #f0dea4;}
+.customSelectInner {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.customSelectInner:after {display: block;content: "";background: url(../img/sprite.png) 0 -175px no-repeat;
+width: 8px;height: 5px;position: absolute;right: 9px;
+top: 13px;z-index: 0;}
+.customSelectOpen .customSelectInner:after {background-position: -10px -175px;}
+.full-width span.customSelect {width: 100%;box-sizing: border-box; height: 30px;}
+.full-width span.customSelectInner{width: 100% !important;}
 
 @media (max-width: 979px) {
 div#item-per-page-wraper {float: none; }
